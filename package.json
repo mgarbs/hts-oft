@@ -1,0 +1,22 @@
+{
+  "name": "layerzero-hts-oft-project",
+  "version": "1.0.0",
+  "description": "LayerZero OFT with Hedera Token Service integration",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy:bsc": "hardhat run scripts/deploy.js --network bscTestnet",
+    "deploy:hedera": "hardhat run scripts/deploy.js --network hederaTestnet",
+    "transfer": "hardhat run scripts/transfer.js"
+  },
+  "dependencies": {
+    "@layerzerolabs/solidity-examples": "^0.0.13",
+    "@openzeppelin/contracts": "^4.8.0",
+    "@hashgraph/hedera-smart-contracts": "^0.2.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.4"
+  }
+}
